@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,47 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+@layer utilities {
+
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+
+    scrollbar-width: none;
+
+  }
+}
+
+
+
+.font-cursive {
+  font-family: 'Pacifico', cursive;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-wave {
+  animation: wave 10s ease-in-out infinite;
+  background: linear-gradient(270deg, rgba(255, 107, 107, 0.5), rgba(0, 200, 255, 0.5), rgba(255, 107, 107, 0.5));
+  background-size: 400% 400%;
 }

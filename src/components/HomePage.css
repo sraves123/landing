@@ -1,0 +1,21 @@
+.zigzag-background {
+    background: linear-gradient(to right, #ff6b6b, #f7b733, #3e8e41, #1e90ff, #ff6b6b);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    height: 100%;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
