@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import MultiStepRegistrationForm from "./MultiStepRegistrationForm";
 import thanksImg from "../images/thanku.jpg";
+import bgImg from "../images/pic3.jpg";
+import bgImg1 from "../images/pic4.jpg";
+import bgImgpic from "../images/bgImgpic.jpg";
 import "./HomePage.css";
 
 const HomePage = () => {
@@ -48,6 +51,197 @@ const HomePage = () => {
                 </button>
               </motion.div>
             </div>
+
+
+             // <div className="bg-black relative h-screen flex flex-col items-center justify-center overflow-hidden">
+            //   <div className="absolute inset-0">
+            //     <div
+            //       className="zigzag-background"
+            //       // style={{
+            //       //   backgroundImage: `url(${bgImg})`,
+            //       //   backgroundSize: "cover",
+            //       //   backgroundRepeat: "no-repeat",
+            //       //   backgroundPosition: "center",
+            //       //   height: "100vh",
+            //       //   width: "100%",
+            //       //   position: "relative",
+            //       // }}
+            //     />
+            //   </div>
+            //   <motion.div
+            //     className="bg-gray-400 bg-opacity-0 p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg max-w-md sm:max-w-lg lg:max-w-xl w-full z-10"
+            //     initial={{ opacity: 0, scale: 0.5 }}
+            //     animate={{ opacity: 1, scale: 1 }}
+            //     transition={{
+            //       duration: 0.3,
+            //       ease: [0, 0.71, 0.2, 1.01],
+            //     }}
+            //   >
+            //     <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-slate-900 text-center">
+            //       Welcome to Our Genetic Testing Lab
+            //     </h1>
+            //     <p className="text-base sm:text-lg lg:text-xl text-black mb-4">
+            //       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            //       do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            //     </p>
+            //     <button
+            //       onClick={handleStartSurvey}
+            //       // className="w-full sm:w-auto md:m-4 px-4 py-2 sm:bg-opacity-0 bg-opacity-0 bg-cyan-400 text-white rounded-md hover:bg-cyan-700 transition-colors duration-200"
+            //       className=" sm:w-auto md:m-4 sm:bg-opacity-0 bg-opacity-0  text-black bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            //     >
+            //       Start Survey
+            //     </button>
+            //   </motion.div>
+            // </div>
+
+
+
+            // <div
+            //   style={{
+            //     backgroundImage: `url(${bgImgpic})`,
+            //     backgroundSize: "cover",
+            //     backgroundRepeat: "no-repeat",
+            //     backgroundPosition: "center",
+            //     height: "100vh",
+            //     width: "100%",
+            //     display: "flex", // Use flexbox
+            //     justifyContent: "flex-end", // Align items to the right
+            //     alignItems: "center", // Center items vertically
+            //     padding: "0 20px", // Optional: add some padding on the sides
+            //   }}
+            // >
+            //   <motion.div
+            //     className="bg-gray-400 bg-opacity-0 p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg max-w-md sm:max-w-lg lg:max-w-xl w-full z-10"
+            //     initial={{ opacity: 0, scale: 0.5 }}
+            //     animate={{ opacity: 1, scale: 1 }}
+            //     transition={{
+            //       duration: 0.3,
+            //       ease: [0, 0.71, 0.2, 1.01],
+            //     }}
+            //   >
+            //     <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-slate-900 text-center">
+            //       Welcome to Our Genetic Testing Lab
+            //     </h1>
+            //     <p className="text-base sm:text-lg lg:text-xl text-black mb-4">
+            //       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            //       do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            //     </p>
+            //     <button
+            //       onClick={handleStartSurvey}
+            //       className="sm:w-auto md:m-4 sm:bg-opacity-0 bg-opacity-0 text-black bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            //     >
+            //       Start Survey
+            //     </button>
+            //   </motion.div>
+            // </div>
+            // <div
+            //   className="bg-cover bg-no-repeat bg-center h-screen w-full"
+            //   style={{ backgroundImage: `url(${bgImgpic})` }}
+            // >
+            //   <div className="flex items-center justify-end h-full px-4">
+            //     {" "}
+            //     {/* Flex container */}
+            //     <motion.div
+            //       className="bg-gray-400 bg-opacity-0 p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg max-w-md sm:max-w-lg lg:max-w-xl w-full z-10"
+            //       initial={{ opacity: 0, scale: 0.5 }}
+            //       animate={{ opacity: 1, scale: 1 }}
+            //       transition={{
+            //         duration: 0.3,
+            //         ease: [0, 0.71, 0.2, 1.01],
+            //       }}
+            //     >
+            //       <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-slate-900 text-center">
+            //         Welcome to Our Genetic Testing Lab
+            //       </h1>
+            //       <p className="text-base sm:text-lg lg:text-xl text-black mb-4">
+            //         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            //         do eiusmod tempor incididunt ut labore et dolore magna
+            //         aliqua.
+            //       </p>
+            //       <button
+            //         onClick={handleStartSurvey}
+            //         className="sm:w-auto md:m-4 sm:bg-opacity-0 bg-opacity-0 text-black bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            //       >
+            //         Start Survey
+            //       </button>
+            //     </motion.div>
+            //   </div>
+            // </div>
+            // <div
+            //   className="bg-cover bg-no-repeat bg-center h-screen w-full"
+            //   style={{ backgroundImage: `url(${bgImgpic})` }}
+            // >
+            //   <div className="flex items-center justify-end h-full px-4">
+            //     {" "}
+            //     {/* Flex container */}
+            //     <motion.div
+            //       className="bg-white bg-opacity-0 p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg max-w-md sm:max-w-lg lg:max-w-xl w-full z-10"
+            //       initial={{ opacity: 0, scale: 0.5 }}
+            //       animate={{ opacity: 1, scale: 1 }}
+            //       transition={{
+            //         duration: 0.3,
+            //         ease: [0, 0.71, 0.2, 1.01],
+            //       }}
+            //     >
+            //       <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-slate-900 text-center">
+            //         Welcome to Our Genetic Testing Lab
+            //       </h1>
+            //       <p className="text-base sm:text-lg lg:text-xl text-black mb-4 text-center">
+            //         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            //         do eiusmod tempor incididunt ut labore et dolore magna
+            //         aliqua.
+            //       </p>
+            //       <div className="flex justify-center">
+            //         <button
+            //           onClick={handleStartSurvey}
+            //           className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            //         >
+            //           Start Survey
+            //         </button>
+            //       </div>
+            //     </motion.div>
+            //   </div>
+            // </div>
+
+
+
+            // <div
+            //   className="bg-cover bg-no-repeat bg-center h-screen w-full"
+            //   style={{ backgroundImage: `url(${bgImg1})` }}
+            // >
+            //   <div className="flex items-center justify-start h-full px-4">
+            //     {" "}
+            //     {/* Flex container */}
+            //     <motion.div
+            //       className="bg-white bg-opacity-0 p-6 sm:p-8 lg:p-10 rounded-lg shadow-lg max-w-md sm:max-w-lg lg:max-w-xl w-full z-10"
+            //       initial={{ opacity: 0, scale: 0.5 }}
+            //       animate={{ opacity: 1, scale: 1 }}
+            //       transition={{
+            //         duration: 0.3,
+            //         ease: [0, 0.71, 0.2, 1.01],
+            //       }}
+            //     >
+            //       <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-slate-900 text-center">
+            //         Welcome to Our Genetic Testing Lab
+            //       </h1>
+            //       <p className="text-base sm:text-lg lg:text-xl text-black mb-4 text-center">
+            //         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            //         do eiusmod tempor incididunt ut labore et dolore magna
+            //         aliqua.
+            //       </p>
+            //       <div className="flex justify-center">
+            //         <button
+            //           onClick={handleStartSurvey}
+            //           className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            //         >
+            //           Start Survey
+            //         </button>
+            //       </div>
+            //     </motion.div>
+            //   </div>
+            // </div>
+
+            
           ) : (
             <MultiStepRegistrationForm onFormSubmit={handleFormSubmit} />
           )}
