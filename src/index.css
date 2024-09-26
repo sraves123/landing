@@ -60,3 +60,32 @@ code {
   background: linear-gradient(270deg, rgba(255, 107, 107, 0.5), rgba(0, 200, 255, 0.5), rgba(255, 107, 107, 0.5));
   background-size: 400% 400%;
 }
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 2.0s ease forwards; 
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 2.0s ease forwards; 
+}

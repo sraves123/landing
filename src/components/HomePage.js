@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import MultiStepRegistrationForm from "./MultiStepRegistrationForm";
 import thanksImg from "../images/thanku.jpg";
-import bgImg from "../images/pic3.jpg";
-import bgImg1 from "../images/pic4.jpg";
-import bgImgpic from "../images/bgImgpic.jpg";
+// import bgImg from "../images/pic3.jpg";
+// import bgImg1 from "../images/pic4.jpg";
+// import bgImgpic from "../images/bgImgpic.jpg";
 import "./HomePage.css";
 
 const HomePage = () => {
